@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #E2EDEB;
+}
+li:hover{
+    font-size: 1.3rem;
+}
+.nik p:hover{
+    font-size: 1.1rem;
+}
+.container{
+    background: #E2EDEB;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container .bek{
+    position: absolute;
+    width: 280px;
+    height: 690px;
+    /* background: linear-gradient(30deg,#B721FF, #21D4FD); */
+    background-color: #425C59;
+    margin-top: 2vh;
+    margin-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.container .bek.ol{
+    background: linear-gradient(30deg, #21D4FD, #B721FF);
+}
+.container .bek .nik{
+    height: 200px;
+    width: 260px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+        -10px -10px 10px rgba(255, 255, 255, 0.2);
+    margin-top: 11px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.container .bek .nik .bos{
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: red;
+    right: 20px;
+    margin-top: 7px;
+}
+.container .bek .nik .bos .btnn{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    right: 0;
+    transition: all 0.5s ease;
+}
+.container .bek .nik p{
+    transition: all 0.5s ease;
+    color: #fff;
+}
+.container .bek .nik h1{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.container .bek .nik .bos .btnn.bekkk{
+    position: absolute;
+    right: 35px;
+}
+.container .bek .nik #img{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+.container .bek .harf{
+    width: 100%;
+    height: 350px;
+    /* background-color: #888; */
+    text-align: center;
+}
+.container .bek .harf .activee{
+    margin-top: 5px;
+}
+.container .bek .harf .activee .bir{
+    position: absolute;
+    background-image: url(./icon/github.png);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-size: cover;
+    transform: translateX(-20px);
+    margin-top: 7px;
+}
+.container .bek .harf .activee .ikki{
+    position: absolute;
+    background-image: url(./icon/instagram.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-size: cover;
+    transform: translateX(-95px);
+    margin-top: 7px;
+}
+.container .bek .harf .activee .uch{
+    position: absolute;
+    background-image: url(./icon/telegram.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-size: cover;
+    transform: translateX(50px);
+    margin-top: 7px;
+}
+.container .bek .harf ul li{
+    list-style: none;
+    padding: 15px 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.container .bek .harf ul li.active{
+    position: relative;
+    background: #e7ecef;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 270px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.container .bek .harf ul li.active::before{
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 45px;
+    background-color: none;
+    right: 0;
+    top: -45px;
+    border-radius:  50%;
+    box-shadow: 19px 19px 0 #e7ecef;
+}
+.container .bek .harf ul li.active::after{
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 45px;
+    background-color: none;
+    right: 0;
+    bottom: -45px;
+    border-radius:  50%;
+    box-shadow: 19px -19px 0 #e7ecef;
+}
+.container .uchta{
+    position: absolute;
+    display: flex;
+    margin-left: 330px;
+    margin-top: 2vh;
+}
+.container .uchta #bek{
+    width: 60px;
+    height: 60px;
+    color: #77b1a3;
+}
+.container .uchta .bir{
+    width: 365px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(5px);
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: #92b7c0;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.container .uchta .ikki{
+    width: 365px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.14);
+    background: #92b7c0;
+    backdrop-filter: blur(5px);
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.container .uchta .uch{
+    width: 365px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.14);
+    background: #92b7c0;
+    backdrop-filter: blur(5px);
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.container .uchta .bir:hover{
+    background: #47A7FE;
+}
+.container .uchta .ikki:hover{
+    background: #47A7FE;
+}
+.container .uchta .uch:hover{
+    background: #47A7FE;
+}
+.container .ikkita{
+    display: flex;
+    margin-left: 330px;
+    position: absolute;
+    margin-top: 19vh;
+}
+.container .ikkita .bir{
+    width: 675px;
+    height: 565px;
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid  #47A7FE;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.container .ikkita .bir .count{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .ikkita .bir .count h2{
+    margin: 5px 0 0 10px;
+    border-radius: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.container .ikkita .bir .count h3{
+    cursor: pointer;
+    margin: 6px 10px 0 0;
+    border-radius: 10px;
+    padding: 7px 15px;
+    background: #425C59;
+    color: #fff;
+    letter-spacing: 3px;
+    
+}
+table{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+tr{
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+tr:hover{
+    background-color: #425C59;
+    color: #fff;
+}
+td{
+    padding: 10px 0;
+}
+#tbody{
+    margin-top: 10px;
+}
+th{
+    width: 165px;
+    height: 40px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container .ikkita .ikki{
+    width: 440px;
+    margin-left: 20px;
+    height: 565px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: #fff;
+    border: 1px solid  #47A7FE;
+    display: flex;
+    flex-direction: column;
+}
+.container .ikkita .ikki h2{
+    margin: 10px auto 0 auto;
+}
+.container .ikkita .ikki .mijoz .songi{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.container .ikkita .ikki .mijoz .songi #bekk{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 20px 0 20px;
+    object-fit: cover;
+}
+.container .ikkki{
+    display: flex;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 60vh;
+}
+.container #btnnn{
+    display: none;
+}
+.container .footer{
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .container {
+        margin: auto;
+    }
+    .container .bek{
+        transform: translateY(-800px);
+        z-index: 10;
+        margin: 70px 0 0 60px;
+        transition: all 0.5s ease;
+    }
+    .container .bek.bos{
+        transform: translateY(0);
+    }
+    .container .bek .activee{
+        display: none;
+    }
+    .container .uchta{
+        margin: 40px auto auto 20px;
+        flex-direction: column;
+    }
+    .container .ikkita{
+        margin: 400px auto auto 20px;
+        flex-direction: column;
+    }
+    th{
+        width: 100px;
+    }
+    .container .ikkita .bir{
+        width: 370px;
+        height: 600px;
+    }
+    .container .ikkita .ikki{
+        width: 370px;
+        margin: 30px 0 40px 0
+    }
+    .container #btnnn{
+        margin: 10px 0 0 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .container #btnnn .knopka{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #344648;
+        z-index: 14;
+        position: relative;
+        overflow: hidden;
+    }
+    .container #btnnn .knopka .bir{
+        position: absolute;
+        width: 40px;
+        border-radius: 10px;
+        height: 5px;
+        background-color: #beccbf;
+        transition: all 0.5s ease;
+    }
+    .container #btnnn .knopka .ikki{
+        position: absolute;
+        width: 40px;
+        border-radius: 10px;
+        height: 5px;
+        background-color: #beccbf;
+        transform: translateY(12px);
+        transition: all 0.5s ease;
+    }
+    .container #btnnn .knopka .uch{
+        position: absolute;
+        width: 40px;
+        border-radius: 10px;
+        height: 5px;
+        background-color: #beccbf;
+        transform: translateY(-12px);
+        transition: all 0.5s ease;
+    }
+    .container #btnnn .knopka.ggg .bir{
+        transform: translateX(-60px);
+    }
+    .container #btnnn .knopka.ggg .ikki{
+        transform: translateY(0) rotate(-45deg);
+    }
+    .container #btnnn .knopka.ggg .uch{
+        transform: translateY(0) rotate(45deg);
+    }
+    .container #btnnn .logo{
+        transform: translateX(260px);
+    }
+    .container #btnnn .logo h2{
+        padding: 5px 10px;
+        color: #000;
+        font-weight: bold;
+    }
+    .container .footer{
+        display: block;
+        margin: 1650px 0 0 20px;
+        border-radius: 15px;
+        width: 370px;
+        height: 150px;
+        background-color: #558599;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        color: #fff;
+    }
+    .container .footer:hover{
+        background-color: #77b1a3;
+        color: #000;
+    }
+    .container .footer #rasm{
+        width: 40px;
+        height: 40px;
+    }
+    .container .footer .rasm{
+        margin: 0 25px 0 25px;
+    }
+    .container .footer .niyoz{
+        margin-top: 10px;
+        display: flex;
+    }
+}
